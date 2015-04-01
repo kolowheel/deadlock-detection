@@ -1,4 +1,4 @@
-package example
+package main.scala.org.ua.deadlock
 
 import java.util.concurrent.locks.{Condition, ReentrantReadWriteLock, Lock, ReadWriteLock}
 import java.util.concurrent.TimeUnit

@@ -68,7 +68,7 @@ class DeadlockDetectionManager[Thread, ReadWriteLock] {
 
   def detectDeadlock() = concurrentWrapper({
     val immStateMatrix = stateMatrix.toMap
-    future {
+    Future {
       val waitForMatrix = buildWaitForMatrix(immStateMatrix)
       var anyCycle = false
       val threadIterator = waitForMatrix.keys.iterator
